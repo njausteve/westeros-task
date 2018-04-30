@@ -1,0 +1,18 @@
+.left-panel {
+  background-color: $color-gray-dark;
+  width: 220px;
+  height: 100vh;
+  position: inline-block;
+  .navbar-header {
+    padding: 20px;
+    background-color: $color-blue;
+
+    h3 {
+      color: #ffffff;
+    }
+  }
+
+  nav {
+    padding: 20px;
+  }
+}

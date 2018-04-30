@@ -1,0 +1,24 @@
+.search-box {
+  white-space: nowrap;
+  position: relative;
+  color: $color-gray-author;
+  background-color: $color-blue;
+  padding: 0 20px;
+
+  .search {
+    border-radius: 2rem;
+    padding: 10px 15px;
+    margin: 20px 10px;
+    width: 100%;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 200;
+  }
+  .icon {
+    position: absolute;
+    z-index: 2;
+    left: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

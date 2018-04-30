@@ -1,0 +1,23 @@
+@import "vendors/bootstrap";
+
+/*
+     --------------------------------------  End of boootstrap ----------------------------------
+*/
+
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+@import "layout/header";
+@import "layout/sidebar";
+
+@import "base/typography";
+
+@import "components/animations";
+@import "components/searchbox";
+
+@import "pages/products";
+
+* {
+  outline: 0.5px solid red;
+}
