@@ -14,6 +14,14 @@
       color: $color-gray-author;
     }
   }
+  .dropdown-toggle {
+    &:after {
+      display: none !important;
+    }
+  }
+  .dropdown-menu {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
 }
 
 #navbarToggler,
@@ -24,10 +32,15 @@
 @media screen and (min-width: 768px) {
   .right-panel {
     .navbar {
+      position: fixed;
+      top: 0;
+      right: 0;
+
+      width: inherit;
+      z-index: 200;
       background-color: $color-off-white;
 
       .search-box {
-        margin-left: 20px;
         background-color: $color-off-white;
         .search {
           margin: 0px;
@@ -40,14 +53,15 @@
     }
   }
 }
-
-ul {
-  padding: 20px 0;
-  li {
-    padding: 15px 0px;
-    font-size: 18px;
-    a {
-      color: $color-gray-title;
+.collapse-styling {
+  ul {
+    padding: 20px 0;
+    li {
+      padding: 15px 0px;
+      font-size: 18px;
+      a {
+        color: $color-gray-title;
+      }
     }
   }
 }

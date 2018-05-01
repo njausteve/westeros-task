@@ -2,17 +2,36 @@
   background-color: $color-gray-dark;
   width: 220px;
   height: 100vh;
-  position: inline-block;
   .navbar-header {
     padding: 20px;
     background-color: $color-blue;
 
     h3 {
       color: #ffffff;
+      font-family: "Roboto Slab", serif;
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-decoration: none;
     }
   }
 
   nav {
     padding: 20px;
+
+    .main-menu {
+      padding-left: 20px;
+      ul {
+        li {
+          font-size: 16px;
+          color: #ffffff;
+          margin-bottom: 30px;
+          a {
+            color: #ffffff;
+            font-weight: 100;
+            font-family: "Roboto", sans-serif;
+          }
+        }
+      }
+    }
   }
 }

@@ -15,9 +15,27 @@
 
 @import "components/animations";
 @import "components/searchbox";
+@import "components/card";
 
 @import "pages/products";
 
 * {
   outline: 0.5px solid red;
+}
+
+@media (min-width: 992px) {
+  .col-md-1-5 {
+    flex: 0 0 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-1-5 {
+    flex: 0 0 20%;
+  }
+}
+
+body,
+html {
+  overflow: hidden;
 }

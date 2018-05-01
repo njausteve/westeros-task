@@ -1,0 +1,12 @@
+.card-item {
+  .card-image {
+    width: 100%;
+  }
+  .card-detail {
+    padding: 10px 0px;
+    .card-heading {
+      color: $color-gray-title;
+      font-weight: 300;
+    }
+  }
+}
