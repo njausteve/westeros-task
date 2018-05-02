@@ -18,8 +18,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="#">
 
     <link rel="stylesheet" href="/stylesheets/css/main.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400" rel="stylesheet">
     <!-- <script src="/_ignite/js/libs/modernizr-2.0.6.min.js" async></script> -->
@@ -28,7 +26,8 @@
 </head>
 
 <body>
-    <div class="row m-0">
+    <div class="row m-0" style=" display: flex;">
+
         <div id="left-panel" class="left-panel d-none d-md-block">
             <div class="navbar-header">
 
@@ -46,15 +45,15 @@
                 <div id="main-menu" class="main-menu">
                     <ul class="nav navbar-nav">
                         <li class="menu-item-has-children dropdown">
-                            <i class="fa fa-puzzle-piece"></i>
+                            <i class="fas fa-archive"></i>
                             <a href="#products.html">Products</a>
                         </li>
                         <li>
-                            <i class="fa fa-id-badge"></i>
+                            <i class="fas fa-copy"></i>
                             <a href="#whitelists.html">Whitelists</a>
                         </li>
                         <li>
-                            <i class="fa fa-bars"></i>
+                            <i class="fas fa-random"></i>
                             <a href="#api.html">Api Application</a>
                         </li>
                     </ul>
@@ -76,23 +75,30 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <form class="form-inline my-lg-0 d-none d-md-block search-box">
                     <input class="form-control mr-sm-2 border-0 search " type="search " placeholder="Type to search... " aria-label="Search ">
                     <span class="icon">
-                        <i class="fa fa-search"></i>
+                        <i class="fas fa-search"></i>
                     </span>
                 </form>
 
+                <div class="navbar-header d-md-none">
+                    <a href="./">
+                        <h3 class="text-center">Westeros</h3>
+                    </a>
+
+                </div>
+
                 <div class="dropdown">
                     <a href="#" class="d-md-none" data-toggle="collapse" data-target="#profileToggle" aria-controls="profileToggle">
-                        <img src="/assets/images/profile.png" class=" profile-pic rounded-circle" alt="avatar">
+                        <i class="fas fa-user-circle fa-2x" style="width:30px; height: 30px;"></i>
                         <span id="username" class="">Lorem Ipsum</span>
                     </a>
                     <a href="#" class="d-none d-md-block dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="/assets/images/profile.png" class=" profile-pic rounded-circle" alt="avatar">
-                        <span id="username" class="">Lorem Ipsum</span>
+                        <i class="fas fa-user-circle fa-3x profile-pic"></i>
+                        <p id="username" class="">Lorem Ipsum</p>
                     </a>
+
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="#">My profile</a>
                         <a class="dropdown-item" href="#">Notifications</a>
@@ -108,14 +114,22 @@
             <!-- profile collape menu -->
             <div class="collapse navbar-collapse d-md-none collapse-styling" id="profileToggle">
 
-                <ul class=" navbar-nav mr-auto mt-lg-0 text-center">
-                    <li class="menu-item-has-children dropdown">
-                        <i class="fa fa-puzzle-piece"></i>
-                        <a href="#products.html">logout</a>
+                <ul class=" navbar-nav mr-auto mt-lg-0">
+                    <li>
+                        <i class="fas fa-user"></i>
+                        <a href="#products.html">My profile</a>
                     </li>
                     <li>
-                        <i class="fa fa-bars"></i>
-                        <a href="#api.html">settings</a>
+                        <i class="fas fa-bell"></i>
+                        <a href="#products.html">Notifications</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-cogs"></i>
+                        <a href="#products.html">Settings</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-sign-out-alt"></i>
+                        <a href="#api.html">Logout</a>
                     </li>
 
                 </ul>
@@ -127,20 +141,20 @@
                 <form class="form-inline my-lg-0  search-box">
                     <input class="form-control mr-sm-2 border-0 search" type="search " placeholder="Type to search... " aria-label="Search ">
                     <span class="icon">
-                        <i class="fa fa-search"></i>
+                        <i class="fas fa-search"></i>
                     </span>
                 </form>
-                <ul class=" navbar-nav mr-auto mt-lg-0 text-center">
+                <ul class=" navbar-nav mr-auto mt-lg-0">
                     <li class="menu-item-has-children dropdown ">
-                        <i class="fa fa-puzzle-piece"></i>
+                        <i class="fas fa-archive"></i>
                         <a href="#products.html">Products</a>
                     </li>
                     <li>
-                        <i class="fa fa-id-badge"></i>
+                        <i class="fas fa-copy"></i>
                         <a href="#whitelists.html">Whitelists</a>
                     </li>
                     <li>
-                        <i class="fa fa-bars"></i>
+                        <i class="fas fa-random"></i>
                         <a href="#api.html">Api Application</a>
                     </li>
 
@@ -149,314 +163,194 @@
             </div>
 
             <!-- end of: collapse menus -->
-            <div class="content">
+
+            <div class="row mx-0 content">
+
                 <div class="col-12 text-center product-heading">
                     <h4>Products</h4>
                 </div>
-
-                <div class="row m-0 content">
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class="card-image" src="./assets/images/boxing_glove_final.png" alt="" width="">
-                            <div class="card-detail">
-                                <h5 class="card-heading">Lorem Ipsum</h5>
-                                <p class="card-author">by Author</p>
-                            </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-1-5 card-container" >
+                    <div class="card-item">
+                        <img class="card-image" src="./assets/images/dropIt.png" alt="dropit">
+                        <div class="card-detail">
+                            <h5 class="card-heading ">lorem ipsum</h5>
+                            <p class="card-author">by
+                                <span>random author</span>
+                            </p>
                         </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class="card-image" src="./assets/images/boxing_glove_final.png" alt="" width="">
-                            <div class="card-detail">
-                                <h5 class="card-heading">Lorem Ipsum</h5>
-                                <p class="card-author">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class="card-image" src="./assets/images/boxing_glove_final.png" alt="" width="">
-                            <div class="card-detail">
-                                <h5 class="card-heading">Lorem Ipsum</h5>
-                                <p class="card-author">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class="card-image" src="./assets/images/boxing_glove_final.png" alt="" width="">
-                            <div class="card-detail">
-                                <h5 class="card-heading">Lorem Ipsum</h5>
-                                <p class="card-author">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class=" card-image " src="./assets/images/boxing_glove_final.png " alt=" " width=" ">
-                            <div class="card-detail ">
-                                <h5 class="card-heading ">Lorem Ipsum</h5>
-                                <p class="card-author ">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class=" card-image " src="./assets/images/boxing_glove_final.png " alt=" " width=" ">
-                            <div class="card-detail ">
-                                <h5 class="card-heading ">Lorem Ipsum</h5>
-                                <p class="card-author ">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class=" card-image " src="./assets/images/boxing_glove_final.png " alt=" " width=" ">
-                            <div class="card-detail ">
-                                <h5 class="card-heading ">Lorem Ipsum</h5>
-                                <p class="card-author ">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class="card-image" src="./assets/images/boxing_glove_final.png" alt="" width="">
-                            <div class="card-detail">
-                                <h5 class="card-heading">Lorem Ipsum</h5>
-                                <p class="card-author">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class="card-image" src="./assets/images/boxing_glove_final.png" alt="" width="">
-                            <div class="card-detail">
-                                <h5 class="card-heading">Lorem Ipsum</h5>
-                                <p class="card-author">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class="card-image" src="./assets/images/boxing_glove_final.png" alt="" width="">
-                            <div class="card-detail">
-                                <h5 class="card-heading">Lorem Ipsum</h5>
-                                <p class="card-author">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class="card-image" src="./assets/images/boxing_glove_final.png" alt="" width="">
-                            <div class="card-detail">
-                                <h5 class="card-heading">Lorem Ipsum</h5>
-                                <p class="card-author">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class=" card-image " src="./assets/images/boxing_glove_final.png " alt=" " width=" ">
-                            <div class="card-detail ">
-                                <h5 class="card-heading ">Lorem Ipsum</h5>
-                                <p class="card-author ">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class=" card-image " src="./assets/images/boxing_glove_final.png " alt=" " width=" ">
-                            <div class="card-detail ">
-                                <h5 class="card-heading ">Lorem Ipsum</h5>
-                                <p class="card-author ">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class=" card-image " src="./assets/images/boxing_glove_final.png " alt=" " width=" ">
-                            <div class="card-detail ">
-                                <h5 class="card-heading ">Lorem Ipsum</h5>
-                                <p class="card-author ">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class=" card-image " src="./assets/images/boxing_glove_final.png " alt=" " width=" ">
-                            <div class="card-detail ">
-                                <h5 class="card-heading ">Lorem Ipsum</h5>
-                                <p class="card-author ">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class="card-image" src="./assets/images/boxing_glove_final.png" alt="" width="">
-                            <div class="card-detail">
-                                <h5 class="card-heading">Lorem Ipsum</h5>
-                                <p class="card-author">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class="card-image" src="./assets/images/boxing_glove_final.png" alt="" width="">
-                            <div class="card-detail">
-                                <h5 class="card-heading">Lorem Ipsum</h5>
-                                <p class="card-author">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class="card-image" src="./assets/images/boxing_glove_final.png" alt="" width="">
-                            <div class="card-detail">
-                                <h5 class="card-heading">Lorem Ipsum</h5>
-                                <p class="card-author">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class="card-image" src="./assets/images/boxing_glove_final.png" alt="" width="">
-                            <div class="card-detail">
-                                <h5 class="card-heading">Lorem Ipsum</h5>
-                                <p class="card-author">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class=" card-image " src="./assets/images/boxing_glove_final.png " alt=" " width=" ">
-                            <div class="card-detail ">
-                                <h5 class="card-heading ">Lorem Ipsum</h5>
-                                <p class="card-author ">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class=" card-image " src="./assets/images/boxing_glove_final.png " alt=" " width=" ">
-                            <div class="card-detail ">
-                                <h5 class="card-heading ">Lorem Ipsum</h5>
-                                <p class="card-author ">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class=" card-image " src="./assets/images/boxing_glove_final.png " alt=" " width=" ">
-                            <div class="card-detail ">
-                                <h5 class="card-heading ">Lorem Ipsum</h5>
-                                <p class="card-author ">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class=" card-image " src="./assets/images/boxing_glove_final.png " alt=" " width=" ">
-                            <div class="card-detail ">
-                                <h5 class="card-heading ">Lorem Ipsum</h5>
-                                <p class="card-author ">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class="card-image" src="./assets/images/boxing_glove_final.png" alt="" width="">
-                            <div class="card-detail">
-                                <h5 class="card-heading">Lorem Ipsum</h5>
-                                <p class="card-author">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class="card-image" src="./assets/images/boxing_glove_final.png" alt="" width="">
-                            <div class="card-detail">
-                                <h5 class="card-heading">Lorem Ipsum</h5>
-                                <p class="card-author">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class="card-image" src="./assets/images/boxing_glove_final.png" alt="" width="">
-                            <div class="card-detail">
-                                <h5 class="card-heading">Lorem Ipsum</h5>
-                                <p class="card-author">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class="card-image" src="./assets/images/boxing_glove_final.png" alt="" width="">
-                            <div class="card-detail">
-                                <h5 class="card-heading">Lorem Ipsum</h5>
-                                <p class="card-author">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class=" card-image " src="./assets/images/boxing_glove_final.png " alt=" " width=" ">
-                            <div class="card-detail ">
-                                <h5 class="card-heading ">Lorem Ipsum</h5>
-                                <p class="card-author ">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class=" card-image " src="./assets/images/boxing_glove_final.png " alt=" " width=" ">
-                            <div class="card-detail ">
-                                <h5 class="card-heading ">Lorem Ipsum</h5>
-                                <p class="card-author ">by Author</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" col-xs-12 col-sm-6 col-md-1-5">
-                        <div class="card-item">
-                            <img class=" card-image " src="./assets/images/boxing_glove_final.png " alt=" " width=" ">
-                            <div class="card-detail ">
-                                <h5 class="card-heading ">Lorem Ipsum</h5>
-                                <p class="card-author ">by Author</p>
-                            </div>
-                        </div>
-
                     </div>
 
                 </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-1-5 card-container">
+                    <div class="card-item">
+                        <img class="card-image" src="./assets/images/mail.png" alt="mail">
+                        <div class="card-detail">
+                            <h5 class="card-heading ">lorem ipsum</h5>
+                            <p class="card-author">by
+                                <span>random author</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-1-5 card-container">
+                    <div class="card-item">
+                        <img class="card-image" src="./assets/images/film.png" alt="film">
+                        <div class="card-detail">
+                            <h5 class="card-heading">lorem ipsum</h5>
+                            <p class="card-author">by
+                                <span>random author</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-1-5 card-container">
+                    <div class="card-item">
+                        <img class="card-image" src="./assets/images/store-front.png" alt="store-front">
+                        <div class="card-detail">
+                            <h5 class="card-heading">lorem ipsum</h5>
+                            <p class="card-author">by
+                                <span>random author</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-1-5 card-container">
+                    <div class="card-item">
+                        <img class="card-image" src="./assets/images/boxing-glove.png" alt="boxing-glove">
+                        <div class="card-detail">
+                            <h5 class="card-heading">lorem ipsum</h5>
+                            <p class="card-author">by
+                                <span>random author</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-1-5 card-container">
+                    <div class="card-item">
+                        <img class="card-image" src="./assets/images/icons-set.png" alt="icons-set">
+                        <div class="card-detail">
+                            <h5 class="card-heading">lorem ipsum</h5>
+                            <p class="card-author">by
+                                <span>random author</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-1-5 card-container">
+                    <div class="card-item">
+                        <img class="card-image" src="./assets/images/instgram.png" alt="instgram">
+                        <div class="card-detail">
+                            <h5 class="card-heading">lorem ipsum</h5>
+                            <p class="card-author">by
+                                <span>random author</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-1-5 card-container">
+                    <div class="card-item">
+                        <img class="card-image" src="./assets/images/glass-fan.png" alt="glass-fan">
+                        <div class="card-detail">
+                            <h5 class="card-heading">lorem ipsum</h5>
+                            <p class="card-author">by
+                                <span>random author</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-1-5 card-container">
+                    <div class="card-item">
+                        <img class="card-image" src="./assets/images/iron-man.png" alt="iron-man">
+                        <div class="card-detail">
+                            <h5 class="card-heading">lorem ipsum</h5>
+                            <p class="card-author">by
+                                <span>random author</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-1-5 card-container">
+                    <div class="card-item">
+                        <img class="card-image" src="./assets/images/Cover.png" alt="Cover">
+                        <div class="card-detail">
+                            <h5 class="card-heading">lorem ipsum</h5>
+                            <p class="card-author">by
+                                <span>random author</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-1-5 card-container">
+                    <div class="card-item">
+                        <img class="card-image" src="./assets/images/flying-egg.png" alt="egg">
+                        <div class="card-detail">
+                            <h5 class="card-heading">lorem ipsum</h5>
+                            <p class="card-author">by
+                                <span>random author</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-1-5 card-container">
+                    <div class="card-item">
+                        <img class="card-image" src="./assets/images/mobile-ui.png" alt="mobile">
+                        <div class="card-detail">
+                            <h5 class="card-heading">lorem ipsum</h5>
+                            <p class="card-author">by
+                                <span>random author</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-1-5 card-container">
+                    <div class="card-item">
+                        <img class="card-image" src="./assets/images/fbcounter.jpg" alt="fbcounter">
+                        <div class="card-detail">
+                            <h5 class="card-heading">lorem ipsum</h5>
+                            <p class="card-author">by
+                                <span>random author</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-1-5 card-container">
+                    <div class="card-item">
+                        <img class="card-image" src="./assets/images/hersog.png" alt="hersog">
+                        <div class="card-detail">
+                            <h5 class="card-heading">lorem ipsum</h5>
+                            <p class="card-author">by
+                                <span>random author</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-1-5 card-container">
+                    <div class="card-item">
+                        <img class="card-image" src="./assets/images/pink-basketball.png" alt="basketball">
+                        <div class="card-detail">
+                            <h5 class="card-heading">lorem ipsum</h5>
+                            <p class="card-author">by
+                                <span>random author</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
 
@@ -472,7 +366,8 @@
         crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js " integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm "
         crossorigin="anonymous "></script>
-
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
     <script src="/js/app.js "></script>
 </body>
 

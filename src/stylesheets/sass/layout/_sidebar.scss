@@ -1,37 +1,59 @@
+/* ==========================================================================
+  side panel section styling
+========================================================================== */
+
 .left-panel {
   background-color: $color-gray-dark;
   width: 220px;
   height: 100vh;
+  position: fixed;
+
   .navbar-header {
     padding: 20px;
     background-color: $color-blue;
 
-    h3 {
-      color: #ffffff;
-      font-family: "Roboto Slab", serif;
-      font-weight: bold;
-      font-size: 1.5rem;
+    a {
       text-decoration: none;
+      h3 {
+        color: #ffffff;
+        font-family: "Roboto Slab", serif;
+        font-weight: bold;
+        font-size: 26px;
+        margin-bottom: 9px;
+      }
     }
   }
 
   nav {
-    padding: 20px;
-
+    background-color: $color-gray-dark;
     .main-menu {
-      padding-left: 20px;
+      width: 100%;
+      padding: 20px 10px;
+
       ul {
         li {
           font-size: 16px;
-          color: #ffffff;
+          color: #d7d9e3;
           margin-bottom: 30px;
+
           a {
-            color: #ffffff;
+            padding: 0 10px;
             font-weight: 100;
             font-family: "Roboto", sans-serif;
+            font-size: 18px;
+
+            &:hover {
+              color: #ffffff;
+            }
           }
         }
       }
     }
+  }
+}
+
+@mixin sidebar--lg() {
+  .left-panel {
+    width: 240px;
   }
 }

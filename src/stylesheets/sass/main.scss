@@ -1,41 +1,16 @@
 @import "vendors/bootstrap";
 
-/*
-     --------------------------------------  End of boootstrap ----------------------------------
-*/
-
 @import "abstracts/variables";
-@import "abstracts/functions";
-@import "abstracts/mixins";
 
 @import "layout/header";
 @import "layout/sidebar";
 
-@import "base/typography";
+@import "pages/products";
 
-@import "components/animations";
+@import "base/typography";
+@import "base/5-col-grid";
+
 @import "components/searchbox";
 @import "components/card";
 
-@import "pages/products";
-
-* {
-  outline: 0.5px solid red;
-}
-
-@media (min-width: 992px) {
-  .col-md-1-5 {
-    flex: 0 0 20%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .col-lg-1-5 {
-    flex: 0 0 20%;
-  }
-}
-
-body,
-html {
-  overflow: hidden;
-}
+@import "media-queries/media-queries";

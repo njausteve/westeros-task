@@ -1,24 +1,48 @@
+/* ==========================================================================
+   Search box styling
+========================================================================== */
+
 .search-box {
   white-space: nowrap;
   position: relative;
-  color: $color-gray-author;
+  color: $color-gray-placeholder;
   background-color: $color-blue;
   padding: 0 20px;
+  border-top: 0.2px solid rgba(201, 229, 255, 0.089);
 
   .search {
     border-radius: 2rem;
     padding: 10px 15px;
-    margin: 20px 10px;
+    margin: 15px 10px 20px 10px;
     width: 100%;
     font-size: 14px;
     font-style: italic;
     font-weight: 200;
   }
+  ::placeholder {
+    color: $color-gray-author;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
   .icon {
     position: absolute;
     z-index: 2;
-    left: 80%;
+    right: 15%;
     top: 50%;
     transform: translateY(-50%);
+  }
+}
+
+// -------- called in media-queries.scss -----------------------------
+
+@mixin searchbox--md() {
+  .search-box {
+    width: 35%;
+  }
+}
+@mixin searchbox--lg() {
+  .search-box {
+    width: 25%;
   }
 }

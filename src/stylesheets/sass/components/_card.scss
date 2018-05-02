@@ -1,12 +1,51 @@
-.card-item {
-  .card-image {
-    width: 100%;
-  }
-  .card-detail {
-    padding: 10px 0px;
-    .card-heading {
-      color: $color-gray-title;
-      font-weight: 300;
+/* ==========================================================================
+   cards syling
+========================================================================== */
+.card-container {
+  padding-left: 0px;
+  padding-right: 0px;
+
+  .card-item {
+    padding: 15px;
+
+    &:hover {
+      background-color: $color-gray-card;
+      border-radius: 5px;
     }
+    .card-image {
+      max-width: 100%;
+      height: auto;
+    }
+    .card-detail {
+      padding: 15px 0px;
+      cursor: pointer;
+
+      .card-heading {
+        color: $color-gray-title;
+        font-weight: 400;
+        margin-bottom: 5px;
+
+        &:hover {
+          color: rgba(116, 190, 225, 0.92);
+        }
+      }
+      .card-author {
+        color: $color-gray-author;
+        margin: 0px;
+
+        span {
+          &:hover {
+            color: rgba(116, 190, 225, 0.92);
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin card--lg() {
+  .card-container {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

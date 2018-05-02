@@ -43,7 +43,7 @@ gulp.task('watch', function() {
 gulp.task("sass", function() {
   return gulp
     .src(sassInput)
-    .pipe(sass())
+    .pipe(sass({outputStyle: 'expanded'}))
     .on(
       "error",
       notify.onError({

@@ -1,17 +1,31 @@
-.navbar {
-  padding: 20px;
-  background-color: $color-gray-dark;
+/* ==========================================================================
+   header section styling
+========================================================================== */
 
+.navbar {
+  padding: 10px 20px;
+  background-color: $color-blue;
+  transition: all 1s ease;
+  .navbar-header {
+    h3 {
+      color: #ffffff;
+      font-family: "Roboto Slab", serif;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+  }
   a {
     text-decoration: none;
     cursor: pointer;
+    color: $color-off-white;
     .profile-pic {
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
     }
     #username {
       display: none;
-      color: $color-gray-author;
+      color: $color-gray-username;
+      margin-bottom: 20px;
     }
   }
   .dropdown-toggle {
@@ -29,17 +43,46 @@
   background-color: $color-off-white;
 }
 
-@media screen and (min-width: 768px) {
+.collapse-styling {
+  z-index: 233;
+  ul {
+    li {
+      padding: 20px 30px;
+      font-size: 18px;
+      font-weight: 400;
+      vertical-align: middle;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      &:last-of-type {
+        margin-bottom: 10px;
+        border-bottom: 0px;
+      }
+      a {
+        padding: 0 15px 0 15px;
+        color: $color-gray-title;
+      }
+    }
+  }
+}
+
+// -------- called in media-queries.scss -----------------------------
+
+@mixin header--md() {
   .right-panel {
     .navbar {
-      position: fixed;
-      top: 0;
-      right: 0;
-
-      width: inherit;
+      padding: 20px;
       z-index: 200;
       background-color: $color-off-white;
+      position: fixed;
+      width: inherit;
 
+      a {
+        color: #212520;
+        .profile-pic {
+          color: #7a7a7a;
+          width: 40px;
+          height: 40px;
+        }
+      }
       .search-box {
         background-color: $color-off-white;
         .search {
@@ -47,20 +90,9 @@
         }
       }
       #username {
-        margin: 0 20px 0 10px;
-        display: inline;
-      }
-    }
-  }
-}
-.collapse-styling {
-  ul {
-    padding: 20px 0;
-    li {
-      padding: 15px 0px;
-      font-size: 18px;
-      a {
-        color: $color-gray-title;
+        margin: 10px 20px 0 10px;
+        display: block;
+        float: right;
       }
     }
   }
