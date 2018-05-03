@@ -36,7 +36,7 @@
 
 @mixin product--md() {
   .right-panel {
-    width: calc(100% - 220px);
+    width: calc(100% - 230px);
 
     .navbar {
       height: 80px;
@@ -55,6 +55,6 @@
 }
 @mixin product--lg() {
   .right-panel {
-    width: calc(100% - 240px);
+    width: calc(100% - 280px);
   }
 }

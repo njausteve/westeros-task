@@ -5978,7 +5978,7 @@ a.text-dark:hover, a.text-dark:focus {
 ========================================================================== */
 .left-panel {
   background-color: #3f4044;
-  width: 220px;
+  width: 230px;
   height: 100vh;
   position: fixed;
 }
@@ -6015,9 +6015,13 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 30px;
 }
 
+.left-panel nav .main-menu ul li .sidebar-icon {
+  width: 15px;
+}
+
 .left-panel nav .main-menu ul li a {
   padding: 0 10px;
-  font-weight: 100;
+  font-weight: 300;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
 }
@@ -6221,10 +6225,10 @@ html {
     float: right;
   }
   .search-box {
-    width: 35%;
+    width: 40%;
   }
   .right-panel {
-    width: calc(100% - 220px);
+    width: calc(100% - 230px);
   }
   .right-panel .navbar {
     height: 80px;
@@ -6241,10 +6245,16 @@ html {
 
 @media screen and (min-width: 992px) {
   .left-panel {
-    width: 240px;
+    width: 280px;
+  }
+  .left-panel .main-menu {
+    margin-top: 20px;
+  }
+  .left-panel .main-menu ul li a {
+    font-size: 1.5rem !important;
   }
   .right-panel {
-    width: calc(100% - 240px);
+    width: calc(100% - 280px);
   }
 }
 

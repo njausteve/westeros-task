@@ -6,12 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "njausteve",
+  "author": "@njausteve",
   "license": "ISC",
   "devDependencies": {
     "bootstrap": "^4.1.0",
     "browser-sync": "^2.23.7",
-    "del": "^3.0.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-node": "^6.0.1",

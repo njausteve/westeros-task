@@ -1,0 +1,1 @@
+$(function(){$(".right-panel .navbar-collapse").on("show.bs.collapse",function(a){$(".right-panel .navbar-collapse").not(this).collapse("hide")})});
