@@ -12,8 +12,13 @@
 // large screen size (lg)
 
 @media screen and (min-width: 992px) {
-  @include searchbox--lg();
   @include sidebar--lg();
   @include product--lg();
-  @include card--lg();
+}
+
+// large screen size (xl)
+
+@media screen and (min-width: 1140px) {
+  @include card--xl();
+  @include searchbox--xl();
 }

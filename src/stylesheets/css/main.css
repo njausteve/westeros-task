@@ -1,6 +1,17 @@
-/*!
- * Bootstrap v4.1.0 (https://getbootstrap.com/)
- */
+/***
+TABLE OF CONTENTS
+
+bootstrap - functions, variables, mixins,root, reboot,type, grid,forms,transitions,dropdown ...
+variables - colors
+layout - Header, sidebar
+Pages-  product styling
+base-  fonts, 5-col-grid extention
+components- searchbox, cards
+media queries - md --> xl 
+***/
+/* ==========================================================================
+   Bootstrap v4.1.0 (https://getbootstrap.com/) section 
+========================================================================== */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -6097,30 +6108,30 @@ html {
 
 .search-box ::-webkit-input-placeholder {
   color: #b3b4b6;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .search-box :-ms-input-placeholder {
   color: #b3b4b6;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .search-box ::-ms-input-placeholder {
   color: #b3b4b6;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .search-box ::placeholder {
   color: #b3b4b6;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
 
 .search-box .icon {
@@ -6229,17 +6240,20 @@ html {
 }
 
 @media screen and (min-width: 992px) {
-  .search-box {
-    width: 25%;
-  }
   .left-panel {
     width: 240px;
   }
   .right-panel {
     width: calc(100% - 240px);
   }
+}
+
+@media screen and (min-width: 1140px) {
   .card-container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .search-box {
+    width: 25%;
   }
 }
