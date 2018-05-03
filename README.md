@@ -1,7 +1,5 @@
 # westeros-task
 
-# Project Title
-
 Front-End Developer Application Challenge.
 
 ## Built With
